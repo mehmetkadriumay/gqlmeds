@@ -2,13 +2,15 @@ import { gql } from "apollo-server-azure-functions";
 
 export const typeDefs = gql `
     type Query {
-        user(id: String!): User
+        well(id: String!): Well
     }
 
-    type User {
-        id: String
-        firstName: String
-        lastName: String
-        age: Int
+    type Well {
+        id: String,
+        kind: String,
+        NameLegal: String,
+        field: String,
+        latitude: Float,
+        longitude: Float
     }
 `;

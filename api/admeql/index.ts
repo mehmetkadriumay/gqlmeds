@@ -1,7 +1,7 @@
 import { CosmosDataSource } from 'apollo-datasource-cosmosdb';
 import { CosmosClient } from "@azure/cosmos";
 import { ApolloServer } from "apollo-server-azure-functions";
-import { typeDefs } from "./well";
+import { typeDefs } from "./schema";
 import { Well } from "./data-sources/wells.js";
 
 const buildCosmosDataSource = <TData extends { id: string }>(
